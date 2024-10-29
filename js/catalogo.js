@@ -9,7 +9,7 @@ const categorias = {
 // Função para carregar a categoria
 function carregarCategoria(categoria) {
   const gid = categorias[categoria];
-  const sheetUrl = `https://docs.google.com/spreadsheets/d/1va43ajINrFeFrGmQeRIvwQKyUV5VCT-UhNIQtocpQhQ/gviz/tq?tqx=out:json&gid=${gid}`;
+  const sheetUrl = `https://docs.google.com/spreadsheets/d/spreadsheets/d/SEU_ID_DA_PLANILHA/gviz/tq?tqx=out:json&gid=${gid}`;
 
   // Carrega os dados da planilha com base na URL da categoria
   fetch(sheetUrl)
@@ -37,7 +37,7 @@ function carregarCategoria(categoria) {
             <p>Cor: ${cor}</p>
             <p class="valor">${valorFormatado}</p>
             <p class="estoque">Estoque: ${estoque} unidades</p>
-            <button class="compra"><a href="https://wa.me/5553984591992?text=Olá, tenho interesse no produto: *${produto} - ${descricao} - ${cor}*" target="_blank">Solicitar produto</a></button>
+            <button class="compra"><a href="https://wa.me/55539999999999?text=Olá, tenho interesse no produto: *${produto} - ${descricao} - ${cor}*" target="_blank">Solicitar produto</a></button>
           </div>
         `;
       });
