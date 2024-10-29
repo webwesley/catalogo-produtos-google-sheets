@@ -1,0 +1,186 @@
+/* Estilos gerais */
+:root{
+    --azul: #0071e3;
+    --verde: #25D366;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  h1, h2 {
+    color: #1d1d1f;
+  }
+  
+  nav {
+    background-color: #1d1d1f;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--azul)
+  }
+  
+  /* Layout do catálogo */
+  #catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 0;
+  }
+  
+  .produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .produto h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .produto p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .produto .valor {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--azul)
+  }
+  
+  .produto .estoque {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .compra {
+    background-color: var(--azul);
+    border: none;
+    border-radius: 8px;
+    padding: 7px 20px;
+  }
+  .compra a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  
+  /* Ajustes responsivos */
+  @media (max-width: 768px) {
+    #catalogo {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .produto {
+      width: 80%;
+      margin: 10px 0;
+    }
+  }
+
+  /* Container do botão flutuante e texto */
+.whatsapp-container {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    z-index: 1000;
+  }
+  
+  /* Botão flutuante do WhatsApp */
+  .whatsapp-float {
+    background-color: var(--verde);
+    color: #FFF;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .whatsapp-float img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .whatsapp-float:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+  
+  /* Texto ao lado do botão */
+  .whatsapp-text {
+    margin-left: 10px;
+    background-color: var(--verde);
+    color: #FFF;
+    padding: 8px 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Exibir o texto ao passar o mouse sobre o botão */
+  .whatsapp-container:hover .whatsapp-text {
+    opacity: 1;
+  }
+  
+  
