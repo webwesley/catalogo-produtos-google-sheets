@@ -4,7 +4,7 @@ Este projeto é um catálogo dinâmico de produtos desenvolvido em HTML, CSS e J
 
 ## 🎨 Demonstração
 
-![Demo Image](https://github.com/seu-usuario/nome-do-repositorio/raw/main/assets/demo.png)
+![Demo Image](https://github.com/webwesley/catalogo-produtos-google-sheets/raw/main/images/print.png)
 
 ## 📋 Funcionalidades
 
